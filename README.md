@@ -1,1 +1,1 @@
-# deepseek-r1-1
+# DeepSeek-R1
