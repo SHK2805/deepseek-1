@@ -32,7 +32,36 @@ conda activate e2e_rag_deepseek_langchain_ollama
 ```bash
 pip install -r requirements.txt
 ```
-* Run the app
+
+### Project Structure
+* The project is split into two parts 
+* The first is a general Question Answering system using the RAG model
+* Run the main.py file to start the Question Answering system
 ```bash
-streamlit run app.py
+streamlit run main.py
+```
+* Below is the folder structure for the project
+```plaintext
+qa/
+│
+├── main.py
+├── chat_engine.py
+├── ui_components.py
+└── prompt_builder.py
+```
+
+* The second part is the End to End RAG with Langchain and Deepseek to read and answer from PDFs
+* The app uploads the pdf, reads it and then answers questions from the text
+* Run the main.py file to start the End to End RAG with Langchain and Deepseek
+```bash
+streamlit run main.py
+```
+* Below is the folder structure for the project
+```plaintext
+pdf_qa/
+│
+├── main.py
+├── document_processing.py
+├── ui_components.py
+└── chat_engine.py
 ```
